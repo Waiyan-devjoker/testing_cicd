@@ -19,13 +19,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - run: |
-        git fetch --prune --unshallow
-
-    steps:
-    
     - uses: actions/checkout@v3
+      with:
+        ref: master
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:

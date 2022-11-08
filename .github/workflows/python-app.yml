@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "u1" ]
   # pull_request:
   #   branches: [ "main" ]
 
@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: master
+        ref: qa
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -33,8 +33,8 @@ jobs:
     #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Pull
       run: |
-        git pull origin main
-        git push origin master
+        git pull origin u1
+        git push origin qa
     
     # - name: Lint with flake8
     #   run: |

@@ -33,8 +33,7 @@ jobs:
     #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Pull
       run: |
-        ls
-        git pull origin main
+        git pull origin origin/main
     
     
     # - name: Lint with flake8

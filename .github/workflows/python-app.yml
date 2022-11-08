@@ -11,7 +11,7 @@ on:
 
 
 # permissions: 
-#   contents: read dddddddd
+#   contents: read aaaaa
 
 jobs:
   build:

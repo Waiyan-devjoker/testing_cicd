@@ -34,7 +34,7 @@ jobs:
     - name: Pull
       run: |
         git pull origin main
-    
+        git push origin master
     
     # - name: Lint with flake8
     #   run: |
